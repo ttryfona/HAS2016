@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.28)  3 JUL 2015 11:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.2.28)  6 JUL 2015 16:15
 entering extended mode
 **paper.tex
 (paper.tex
@@ -156,6 +156,26 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen125
 \Gin@req@width=\dimen126
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\soul\soul.sty"
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks19
+\SOUL@lasttoken=\toks20
+\SOUL@cmds=\toks21
+\SOUL@buffer=\toks22
+\SOUL@token=\toks23
+\SOUL@spaceskip=\skip45
+\SOUL@ttwidth=\dimen127
+\SOUL@uldp=\dimen128
+\SOUL@ulht=\dimen129
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
 ) (paper.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -169,20 +189,23 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
+
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count117
-\scratchdimen=\dimen127
+\scratchdimen=\dimen130
 \scratchbox=\box54
 \nofMPsegments=\count118
 \nofMParguments=\count119
-\everyMPshowfont=\toks19
+\everyMPshowfont=\toks24
 \MPscratchCnt=\count120
-\MPscratchDim=\dimen128
+\MPscratchDim=\dimen131
 \MPnumerator=\count121
 \makeMPintoPDFobject=\count122
-\everyMPtoPDFconversion=\toks20
+\everyMPtoPDFconversion=\toks25
 )
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 20.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -212,53 +235,62 @@ Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
- [2]
-Underfull \vbox (badness 5105) has occurred while \output is active []
 
- [3]
-<fig1.pdf, id=18, 845.1575pt x 380.42125pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+<fig1.pdf, id=17, 845.1575pt x 380.42125pt>
 File: fig1.pdf Graphic file (type pdf)
  <use fig1.pdf>
-Package pdftex.def Info: fig1.pdf used on input line 54.
-(pdftex.def)             Requested size: 253.54921pt x 114.12724pt.
+Package pdftex.def Info: fig1.pdf used on input line 49.
+(pdftex.def)             Requested size: 338.057pt x 152.16579pt.
+ [3] [4 <./fig1.pdf, page is rotated 90 degrees>] <fig2.pdf, id=28, 592.2125pt 
+x 597.23125pt>
+File: fig2.pdf Graphic file (type pdf)
 
+<use fig2.pdf>
+Package pdftex.def Info: fig2.pdf used on input line 73.
+(pdftex.def)             Requested size: 177.66512pt x 179.17075pt.
 
-LaTeX Warning: Reference `' on page 4 undefined on input line 62.
+Underfull \vbox (badness 1102) has occurred while \output is active []
 
-[4 <./fig1.pdf, page is rotated 90 degrees>]
-Overfull \hbox (8.016pt too wide) in paragraph at lines 66--67
-[]\OT1/cmr/m/n/10 Metaphors and analo-gies for pub-lic un-der-stand-ing of surv
-eil-lance in cy-berspace.
- []
-
-[5]
+ [5]
+<fig3.pdf, id=33, 628.3475pt x 597.23125pt>
+File: fig3.pdf Graphic file (type pdf)
+ <use fig3.pdf>
+Package pdftex.def Info: fig3.pdf used on input line 87.
+(pdftex.def)             Requested size: 251.33455pt x 238.88826pt.
+ [6 <./fig2.pdf, page is rotated 90 degrees>] [7 <./fig3.pdf, page is rotated 9
+0 degrees>] [8]
 Missing character: There is no â in font cmr9!
 Missing character: There is no € in font cmr9!
 Missing character: There is no “ in font cmr9!
- [6] (paper.aux)
+Missing character: There is no â in font cmr9!
+Missing character: There is no € in font cmr9!
+Missing character: There is no ™ in font cmr9!
 
-LaTeX Warning: There were undefined references.
-
- ) 
+[9] (paper.aux) ) 
 Here is how much of TeX's memory you used:
- 1565 strings out of 493698
- 19494 string characters out of 3144415
- 85768 words of memory out of 3000000
- 4919 multiletter control sequences out of 15000+200000
- 7456 words of font info for 27 fonts, out of 3000000 for 9000
+ 1824 strings out of 493698
+ 22770 string characters out of 3144415
+ 98412 words of memory out of 3000000
+ 5157 multiletter control sequences out of 15000+200000
+ 11177 words of font info for 39 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 29i,7n,21p,1503b,260s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-tt9.pfb>
-Output written on paper.pdf (6 pages, 174395 bytes).
+ 29i,8n,21p,1503b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+bx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
+i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on paper.pdf (9 pages, 329871 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 88 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

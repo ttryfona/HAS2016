@@ -1,10 +1,10 @@
 \documentclass{llncs}
-\usepackage{graphicx}
+\usepackage{graphicx,soul,color}
 
 %
 \begin{document}
 
-\title{Mass surveillance in cyberspace and the lost art of keeping a secret}
+\title{Mass surveillance in cyberspace and the lost art of keeping a secret\thanks{This paper materialised after a talk at the DCSS conference and became a collaborative activity due to cyber serendipity and twitter}}
 \subtitle{Policy lessons for nation-states after the Snowden leaks}
 
 \author{Theo Tryfonas\inst{1} \and Michael Carter\inst{2} \and Tom Crick\inst{3} \and Panagiotis Andriotis\inst{1}}
@@ -26,52 +26,86 @@ Global security concerns, acts of terrorism and organised crime activity have mo
 
 \section{Introduction}
 \label{sec:Introduction}
-In the fall of 2014, UN Special Rapporteur Ben Emmerson submitted his report on practices of mass surveillance by state actors and the threat that this approach to intelligence gathering poses to universal civil and political rights \cite{Emerson}. Emmerson called for open and transparent discussion between government and citizens to inform and determine an appropriate balance between public security and personal privacy. The Special Rapporteur pointed out that what is technologically possible is not necessarily desirable or responsible. This is an argument that surveillance scholars such as Kirstie Ball have been making for several years now \cite{Ball}. However, traction for this debate was limited until June 2013 when files leaked by NSA whistleblower Edward Snowden were published in the Guardian by journalist Glenn Greenwald. 
+In the fall of 2014, UN Special Rapporteur Ben Emmerson submitted his report on practices of mass surveillance by state actors and the threat that this approach to intelligence gathering poses to universal civil and political rights~\cite{Emerson}. Emmerson called for open and transparent discussion between government and citizens to inform and determine an appropriate balance between public security and personal privacy. The Special Rapporteur pointed out that what is technologically possible is not necessarily desirable or responsible. This is an argument that surveillance scholars such as Kirstie Ball have been making for several years now~\cite{Ball}. However, traction for this debate was limited until June 2013 when files leaked by NSA whistleblower Edward Snowden were published in the Guardian by journalist Glenn Greenwald. 
 
-Two years after the initial release of Snowden files, surveillance legislation remains highly contested in Canada, the US and the UK. Perhaps most notably is the sunsetting of section 215 of The Patriot Act and subsequent passing of The Freedom Act in the United States in early June \cite{Patriot}. Days later the Senate of Canada passed controversial anti-terrorism Bill C-51, which received sustained public opposition from big business, journalists, law professors, activists and the privacy commissioner \cite{C-51}. A week prior to these developments the latest rendition of ’the snooper’s charter’ in the UK was announced in the Queen’s speech. Former deputy Prime Minister Nick Clegg publicly opposed the legislation, currently known as The Investigatory Powers Bill, arguing it threatens the privacy rights of citizens.  
+Two years after the initial release of Snowden files, surveillance legislation remains highly contested in Canada, the US and the UK. Perhaps most notably is the sunsetting of section 215 of The Patriot Act and subsequent passing of The Freedom Act in the United States in early June~\cite{Patriot}. Days later the Senate of Canada passed controversial anti-terrorism Bill C-51, which received sustained public opposition from big business, journalists, law professors, activists and the privacy commissioner~\cite{C-51}. A week prior to these developments the latest rendition of ’the snooper’s charter’ in the UK was announced in the Queen’s speech. Former deputy Prime Minister Nick Clegg publicly opposed the legislation, currently known as The Investigatory Powers Bill, arguing it threatens the privacy rights of citizens.  
 
 These measures are indicative state attempts to curb terrorism threats by enabling the development of surveillance capabilities that are of bulk collection nature, rather than targeted to specific individuals. Proponents of these argue that the proliferation of high technology, including anonymity, cryptography and secure communication tools, enables organised crime to communicate safely and go undetected. On the other hand privacy activists advocate the fundamental need for safe spaces to develop one's ideas, the human right to privacy and an individual's need to protect themselves from abusive regimes.
 
 In this paper we develop an argument about the place of mass cyberspace surveillance in society. We believe that deployment of intrusive systems on line, where necessary, should be of clear and transparent purpose to the public and accompanied by measures that empower the affected communities to tackle the root causes of concern, e.g. radicalisation, hate speech etc. Drawing on analogies from other surveillance systems we develop the idea of co-creation of surveillance, in the civic innovation sense of the term, arguing that otherwise Western states risk developing non-transparent and unaccountable structures of power that undermine the fundamental values of their civilisation.
 
-The rest of the paper is organised as follows: section \ref{sec:Background} provides some further background to the issue of mass surveillance of cyberspace in the West and discusses aspects of the Snowden leaks; section \ref{sec:Understanding} develops some fundamental ideas and draws on analogies from other domains to explore the difficulties and challenges; section \ref{sec:Creating} introduces our ideas for a system-of-systems approach and co-creation of intrusive technologies and finally we conclude with section \ref{sec:Conclusions}.
+The rest of the paper is organised as follows: section~\ref{sec:Background} provides some further background to the issue of mass surveillance of cyberspace in the West and discusses aspects of the Snowden leaks; section~\ref{sec:Understanding} develops some fundamental ideas and draws on analogies from other domains to explore the difficulties and challenges; section~\ref{sec:Creating} introduces our ideas for a system-of-systems approach and co-creation of intrusive technologies and finally we conclude with section~\ref{sec:Conclusions}.
 
 \section{Background}
 \label{sec:Background}
-The debate on mass surveillance, which is comprised of several threads, has engaged a range of social groups including politicians, law makers, journalists, academics, tech firms, activists, artists and the general public. The term mass surveillance is used to distinguish the bulk collection of data from targeted surveillance, which typically involves a 'person of interest'. Central to this aspect of the debate is the legal warrant, which is traditionally issued upon satisfaction of a certain level of suspicion. In the case of Canada, for example, Bill C-13, which was passed in the fall of 2014, significantly lowered the level of suspicion required to justify the collection of personal data. Bill C-13 also addressed the distinction between data and meta data, which is a hotly debated topic in surveillance legislation. Advocates of expanded surveillance powers for the state have attempted to mollify concerns by arguing that meta data does not threaten the political or civil rights of citizens because it is data about communication and not the content of communication. This argument has been routinely problematized by opponents who point out that metadata can reveal religious beliefs, political leanings and intimate relationships. Moreover, meta data is used by state actors to kill people, as was famously announced by former NSA and CIA director Michael Hayden \cite{Hayden}. 
+The debate on mass surveillance, which is comprised of several threads, has engaged a range of social groups including politicians, law makers, journalists, academics, tech firms, activists, artists and the general public. The term mass surveillance is used to distinguish the bulk collection of data from targeted surveillance, which typically involves a 'person of interest'. Central to this aspect of the debate is the legal warrant, which is traditionally issued upon satisfaction of a certain level of suspicion. In the case of Canada, for example, Bill C-13, which was passed in the fall of 2014, significantly lowered the level of suspicion required to justify the collection of personal data. Bill C-13 also addressed the distinction between data and meta data, which is a hotly debated topic in surveillance legislation. Advocates of expanded surveillance powers for the state have attempted to mollify concerns by arguing that meta data does not threaten the political or civil rights of citizens because it is data about communication and not the content of communication. This argument has been routinely problematized by opponents who point out that metadata can reveal religious beliefs, political leanings and intimate relationships. Moreover, meta data is used by state actors to kill people, as was famously announced by former NSA and CIA director Michael Hayden~\cite{Hayden}. 
 
-As legislation governing surveillance practices in Western society continues to evolve, a related debate is emerging. In early June, UN Special Rapporteur David Kaye submitted his report on the right to freedom of opinion and expression. Kaye argued that encryption and anonymity in digital communications is fundamental for the preservation of privacy and the protection of opinion and belief. The Special Rapporteur framed encrypted communication as a tool for citizens to protect their human rights from infringement by government agencies. Moreover, he called for the mobilization of state resources to ensure all individuals using digital communication can do so with encryption. Just prior to the release of the report, Nico Sell, co-founder of leading encryption app Wickr, launched a non-profit organization with this goal in mind. 
+As legislation governing surveillance practices in Western society continues to evolve, a related debate is emerging. In early June, UN Special Rapporteur David Kaye submitted his report on the right to freedom of opinion and expression~\cite{Kaye}. Kaye argued that encryption and anonymity in digital communications is fundamental for the preservation of privacy and the protection of opinion and belief. The Special Rapporteur framed encrypted communication as a tool for citizens to protect their human rights from infringement by government agencies. Moreover, he called for the mobilization of state resources to ensure all individuals using digital communication can do so with encryption. Just prior to the release of the report, Nico Sell, co-founder of leading encryption app Wickr, launched a non-profit organization with this goal in mind. 
 
-However, less popular apps like Wickr and more mainstream services like WhatsApp and Snapchat are being targeted by government. In January 2015 British Prime Minister David Cameron publicly announced his intention to ban communications that are not accessible by government agencies. Cameron asked for and quickly received support for this position from President Obama. The movement to ban encryption points towards the criminalization of private communication, which would threaten a variety of political, civil and human rights. Moreover, security experts have noted that weakening communication by demanding back door access will increase vulnerabilities and by extension could compromise national security. In May 2015 over 140 tech firms including Apple, Google and Symantec sent an open letter to Obama urging him not to push for government access to encrypted communication. In the meantime, apps that offer individuals encrypted communication are proliferating as concern for privacy in mainstream society climbs.
+However, less popular apps like Wickr and more mainstream services like WhatsApp and Snapchat are being targeted by government. In January 2015 British Prime Minister David Cameron publicly announced his intention to ban communications that are not accessible by government agencies. Cameron asked for and quickly received support for this position from President Obama. The movement to ban encryption points towards the criminalization of private communication, which would threaten a variety of political, civil and human rights. Moreover, security experts have noted that weakening communication by demanding back door access will increase vulnerabilities and by extension could compromise national security. In May 2015 over 140 technology firms including Apple, Google and Symantec sent an open letter to President Obama urging him not to push for government access to encrypted communication. In the meantime, apps that offer individuals encrypted communication are proliferating as concern for privacy in mainstream society climbs.
 
-The Snowden leaks revealed a wide portfolio of projects and initiatives both from the NSA in the US and GCHQ in the UK. These range from specific data collection projects such as Optic Nerve, aimed at Yahoo! webcam traffic, to influencing the development of cryptographic standards to contain vulnerabilities, so they can be penetrated easier \cite{ECDH}. In this varied context the Anderson report \cite{Anderson} that was released recently as a comprehensive review of the UK's capabilities and practice prior to revamping the existing legislation, emphasised a number of issues, amongst the most important - and contested - of which, was the suggestion for judicial rather than ministerial oversight.
-
-Politicians have already started countering the suggestion by claiming that despite the wide and varied nature of operations, ministers can have more topical information than judges and make decisions quicker, as opposed to going through the overheads of a judiciary procedure. However, due to the wide reach of operations and their varied nature it is questionable how much in depth understanding can law makers develop in the short amounts of time to decide in the absence of a transparent and well defined process. Another interesting point raised after the leaks is about the level of access and trust vested to a third-party, private contractor by security services, which may be indicative of the lack of resourcing of the relevant agencies -- and adding to the need for sufficient oversight.
-%(\ref{fig:Yahoo})
 \begin{figure}
 \begin{center}
-\label{fig:Yahoo}
-\includegraphics[scale=0.3]{fig1}
+\includegraphics[scale=0.4]{fig1}
 \caption{Yahoo! webcam traffic monitoring report snapshots from Snowden's cache.}
+\label{fig:Yahoo}
 \end{center}
 \end{figure}
 
-\section{Public understanding of surveillance and the context of cyberspace}
+The Snowden leaks revealed a wide portfolio of projects and initiatives both from the NSA in the US and GCHQ in the UK. These range from specific data collection projects such as Optic Nerve, aimed at Yahoo! webcam traffic (Figure \ref{fig:Yahoo}), to influencing the development of cryptographic standards to contain vulnerabilities, so they can be penetrated easier~\cite{ECDH}. In this varied context the Anderson report~\cite{Anderson} that was released recently as a comprehensive review of the UK's capabilities and practice prior to revamping the existing legislation, emphasised a number of issues, amongst the most important - and contested - of which, was the suggestion for judicial rather than ministerial oversight.
+
+Politicians have already started countering the suggestion by claiming that despite the wide and varied nature of operations, ministers can have more topical information than judges and make decisions quicker, as opposed to going through the overheads of a judiciary procedure. However, due to the wide reach of operations it is questionable how much in depth understanding can law makers develop in the short amounts of time to decide in the absence of a transparent and well defined process. Another interesting point raised after the leaks is about the level of access and trust vested to a third-party, private contractor by security services, which may be indicative of the lack of resourcing of the relevant agencies -- and adding to the need for sufficient oversight.
+
+\section{Developing public understanding of surveillance in the context of cyberspace}
 \label{sec:Understanding}
-\subsection{Deconstructing State imagery of surveillance}
-Politicians use many metaphors and analogies to promote the idea of cyberspace surveillance among the public. David Cameron, the UK Prime Minister, talked in early 2015 about the need for the state to be able to eavesdrop digital communications over the Internet, just as it can happen over the telephony network. Drawing on analogies between the more familiar phone technology and the public's understanding of a legitimate wire-tapping process, he tried to reach out to the public, constructing an image of accepted mass surveillance. Among political circles one of the most used analogies for constructing relevant images is the case of the closed-circuit television (CCTV) surveillance systems. This is a familiar, and very tangible, system which in the UK at least enjoys large amounts of public tolerance and even approval \ref{}. XXXXXXXXXX more numbers etc. here XXXXXXXXXXXXXX
+\subsection{Deconstructing state imagery of cyber surveillance}
+Politicians use many metaphors and analogies to promote the idea of cyberspace surveillance among the public. David Cameron, the UK Prime Minister, talked in early 2015 about the need for the state to be able to eavesdrop digital communications over the Internet, just as it can happen over the telephony network. Drawing on analogies between the more familiar phone technology and the public's understanding of a legitimate wire-tapping process, he tried to construct an image of accepted mass surveillance.
 
-xx
+Another frequently used analogy is the case of the closed-circuit television (CCTV) surveillance systems. This is a familiar, and very tangible, system which in the UK at least enjoys large amounts of public tolerance and even approval~\cite{Ditton}, even at the face of lack of real evidence of its effectiveness~\cite{Woodhouse}. We will get back to this a bit later, discussing the experience of insitutionalisation of CCTV as a means of surveillance, particularly in the UK where it is widely deployed across the country.
 
-Metaphors and analogies for public understanding of surveillance in cyberspace. The analogy of CCTV. Wide sensing surface and algorithmic determination. Challenges from unintended consequences of bulk data collection. Algorithmic determination failures. Asumptions of strong governance.
-\subsection{The personal data dimension}
-Monetisation/commoditisation of personal data resulting in casualisation of privacy rights. Unclear operating frameworks and private sector abuse of data. How it contributes to indifference and acceptance of surveillance - but could provide an opportunity for better surveillance!
+Security services in turn have played a role in constructing further the popular image of surveillance in cyberspace. Firstly, they persist in disassociating bulk collection from mass surveillance and differentiating between metadata and content. This is an attempt to legitimise operations based by necessity on a wide scan surface dictated by the complex, interconnected nature of the Internet. In his valedictory speech at the Cabinet War Room on 21 Oct 2014, Sir Iain Lobban, previous head of GCHQ, having just assured that, of the huge volumes of information trafficked on-line, GCHQ were able to capture, store and process only a tiny amount, he went on to say:\\
+\emph{``We access the internet at scale so as to dissect it with surgical precision. Practically, it is now impossible to operate successfully in any other way. You can't pick and choose the components of a global interception system that you like (catching terrorists and paedophiles), and those you don't (incidental collection of data at scale): it's one integrated system.''}~\cite{Lobban}
+
+This reinforces the view of cyberspace surveillance as a wide surface scanning process (a Panopticon, as envisaged by Bentham in Figure \ref{fig:Panopticon}) followed by a clinical application of targeted algorithmics that would be able to pave the way for the more targeted content analysis by real people. The focus on metadata, bulk collection and automated processing before reasonable suspicion has been raised for a human to intervene, constructs an argument about this practice not constituting surveillance, in the sense of its warranted and targeted application.
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.3]{fig2}
+\caption{Part of Jeremy Bentham's designs for a Panopticon prison.}
+\label{fig:Panopticon}
+\end{center}
+\end{figure}
+
+Whether the Panotpicon metaphor matches the underlying security requirements is a significant question. This is because a metaphor is a conceptual construct able to shape action, as demonstrated by several scholars, including e.g. Tsoukas~\cite{Tsoukas}. Very soon after the attacks of 9/11, Lackoff argued that inappropriately framing the reaction as a 'war on terror' would produce unintended consequences~\cite{Lackoff}. Other research shows how secure systems implementation is shaped by the dominant security metaphors in use within organisations~\cite{Tryfonas}.
+
+The Panopticon metaphor imposes the surveillance burden upon everyone, whether they are watched or not. This usually creates fundamental mistrust among many quarters of society towards government and the security services. But even viewed as bulk collection, it implies a huge sifting load for them. The report excerpts of Figure \ref{fig:Yahoo} demonstrate how the signal to noise ratio increases with bulk collection. The OPTIC NERVE programme was riddled with footage of genitals and posed significant challenges to intelligence officers as of how to handle the situation.
+
+But the 'clinical' perception of the algorithmic component is problematic as well. Just as errors in human judgement may lead to tragic outcomes such as the shooting of Brazilian citizen Charles de Menezes in London by police in the aftermath of the 7/7 attacks, similarly algorithms may equally fail (the headline of Figure \ref{fig:Algo} is indicative of such a failure). In fact the absence of human judgement may make this aspect to be perceived as even more untrustworthy. 
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=0.4]{fig3}
+\caption{Failures of algorithmic determination after the Boston bombings.}
+\label{fig:Algo}
+\end{center}
+\end{figure}
+
+Another implicit assumption to legitimise this view is that this activity is organised under a framework of strong oversight. Particularly for the Anglo-Saxon world and especially for the UK, in the light of the strong leadership of prominent politicians such as Winston Churchill, Margaret Thatcher and Tony Blair, this assurance is almost taken for granted. However, history suggests that in the absence of oversight, socio-political circumstances may provide opportunity for exploitation of such structures. The experience of the rise of the Nazi party in the Weimar Republic is in line with this observation. Finally, we often also forget that the Internet is in reality a young technological development that it is yet much unexplored in terms of national security and military doctrine and use. The UK Cyber Security Strategy for example is less than 5 years old~\cite{Cyber}.
+
+\subsection{Personal attitudes and the personal data dimension}
+An interesting dimension of surveillance in cyberspace comes from the personal attitudes of the general public towards intrusive technology and its take up. Most recent disruptive innovations such as social networking platforms and wearable technologies are in fact privacy-intrusive by design. Computational paradigms that are based on the Cloud utilise lightweight computational intelligence of embedded systems and devices and harness the power of on-line servers to process large amounts of personal data. This 'commoditisation' of personal data happens on the trade off of personal service provision (e.g. wayfinding) in return for targeted advertising or aggregated consumer behaviour insight development that is then cashed in by the service provider, e.g. the GoogleAds model~\cite{GoogleAds}.
+
+Despite the fact that providers of services such as Google and facebook usually operate in multi-jurisdictions, which make difficult a coherent legislative approach and leave a lot of issues with respect to protection of personal data, there is a huge take up of their services. It seems that the personal value realised for each user, combined with the unclear implications/risks to the individual from their use have contributed largely to this. This is despite general concerns of legislators for their operation, as in the case of Belgium that investigated facebook tracking of users, even when not logged in~\cite{facebookBel}. Also despite journalists and researchers have flagged how both in terms of practicalities such as extended data retention periods (e.g.~\cite{Wired}), but also how theoretically can be shown that providers tend to maximise their payoffs when they misuse personal data~\cite{Anastasopoulou}.
+
+We argue that one of the side effects of this is the casualisation of attitudes towards privacy rights. There's a creeping indifference that could develop to passive acceptance through repeated interaction and use of such technologies -- in a way that Giddens describes as routinisation in his theory of structuration~\cite{Giddens}. However, familiarity with people giving up personal data in return for real value needn't necessarily be viewed negative in the context of cyber surveillance. We will argue in the following section that such relationship can be at the centre of the creation of new surveillance systems, built upon consensus where intelligence is necessary and there's clear understanding of its value to all stakeholders.
 
 \section{Co-creating viable surveillance systems}
 \label{sec:Creating}
-Confusion of purpose by inappropriate use of metaphors. Need to intervene earlier in the radicalisation lifecycle to debunk the propaganda messages and appeal of radicalism. Need for human-centric intelligence, open source and targeted operations.
 
-The example of CCTV in the UK as a system-of-systems. The need for education and public understanding of surveillance tech. Implications for co-creation with the community.
+\hl{Confusion of purpose by inappropriate use of metaphors. Indoctrination. Need to intervene earlier in the radicalisation lifecycle to debunk the propaganda messages and appeal of radicalism. Need for human-centric intelligence, open source and targeted operations.
+
+The example of CCTV in the UK as a system-of-systems. The need for education and public understanding of surveillance tech. Implications for co-creation with the community.}
+
 
 \section{Conclusions}
 \label{sec:Conclusions}
@@ -86,7 +120,7 @@ It is tempting for security services to explore every avenue of technology to co
 %
 \begin{thebibliography}{}
 %
-\bibitem{Emerson} %2clar:eke}
+\bibitem{Emerson}
 Emerson, B.:
 Annual report of the Special Rapporteur to the Human Rights Council, March 2014
 
@@ -106,13 +140,65 @@ Bill C-51, first reading, January 30, 2015
 Ferran, L.:
 Ex-NSA Chief: 'We Kill People Based on Metadata', abcNEWS, May 12, 2014
 
+\bibitem{Kaye}
+Kaye, D.:
+Report on encryption, anonymity, and the human rights framework, first report to the Human Rights Council, Office for the High Commissioner for Human Rights, 2015
+
 \bibitem{ECDH}
 Hales, T.:
-The NSA Back Door to NIST, Notices of the AMS, Vol. 61, No 2, 191--192
+The NSA Back Door to NIST, Notices of the AMS, Vol. 61, No 2, 191--192, February 2014
 
 \bibitem{Anderson}
 Anderson, D.:
 A Question of Trust -– Report of the Investigatory Powers Review, Independent Reviewer of Terrorism Legislation, June 11, 2015
+
+\bibitem{Ditton}
+Ditton, J.:
+Crime and the City, British Journal of Criminology, 40(4), 692-709, 2000
+
+\bibitem{Woodhouse}
+Woodhouse, J.:
+CCTV and its effectiveness in tackling crime, House of Commons Library Standard Note SN/HA/5624 (2010)
+
+\bibitem{Lobban}
+Lobban, I.:
+Sir Iain Lobban's valedictory speech - as delivered, GCHQ website, 2014
+
+\bibitem{Tsoukas}
+Tsoukas, H.:
+The Missing Link: A Transformational View of Metaphors in Organizational Science, The Academy of Management Review, 16(3), 566-585, 1991 
+
+\bibitem{Lackoff}
+Lackoff, G.:
+Metaphors of Terror, In: Return to The Days After, essays written in the aftermath of September 11, 2001, University of Chicago Press. 
+
+\bibitem{Tryfonas}
+Tryfonas, T.:
+On Security Metaphors and how they shape the emerging practice of secure information systems development, Journal of Information System Security, 3(3), 21-50, 2007
+
+\bibitem{Cyber}
+UK Government:
+The UK Cyber Security Strategy: Protecting and promoting the UK in a digital world, 2011
+
+\bibitem{GoogleAds}
+Google Inc.:
+http://www.google.com/ads/
+
+\bibitem{facebookBel}
+Interdisciplinary Centre for Law and ICT/Centre for Intellectual Property Rights (ICRI/CIR), KU Leuven:
+From social media service to advertising network: A critical analysis of Facebook’s Revised Policies and Terms, DRAFT 31 v1.2, March 2015
+
+\bibitem{Wired}
+Kravets, D.:
+Which Telecoms Store your Data the Longest? Secret Memo Tells All. Wired Magazine, Sept. 2011
+
+\bibitem{Anastasopoulou}
+Anastasopoulou, K., Tryfonas, T. \& Kokolakis, S.:
+Strategic stakeholder interaction analysis of cloud-based mobile applications use of privacy-sensitive end users, Lecture Notes in Computer Science, Springer, Vol. 8030, 209-216, 2013.
+
+\bibitem{Giddens}
+Giddens, A.:
+The constitution of society: Outline of the theory of structuration. Cambridge: Polity Press. 1984. ISBN 0-520-05728-7.
 
 \end{thebibliography}
 \end{document}
