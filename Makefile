@@ -1,4 +1,4 @@
-targets = edemocracy.pdf
+targets = has2016.pdf
 
 all: $(targets)
 
